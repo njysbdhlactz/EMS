@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4652CDBE-ECE4-4881-9860-B9AB64F3315E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMSclient</RootNamespace>
+    <AssemblyName>EMSclient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bookEMS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MD5">
+      <HintPath>obj\Debug\MD5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmLogin.Designer.cs">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmMain.Designer.cs">
+      <DependentUpon>FmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAbout.Designer.cs">
+      <DependentUpon>FmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBackUp.Designer.cs">
+      <DependentUpon>FmBackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookBack.Designer.cs">
+      <DependentUpon>FmBookBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookcase.Designer.cs">
+      <DependentUpon>FmBookcase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookIn.Designer.cs">
+      <DependentUpon>FmBookIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookInfo.Designer.cs">
+      <DependentUpon>FmBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookReturn.Designer.cs">
+      <DependentUpon>FmBookReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookStock.Designer.cs">
+      <DependentUpon>FmBookStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBookStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBookStyle.Designer.cs">
+      <DependentUpon>FmBookStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmCdInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmCdInfo.Designer.cs">
+      <DependentUpon>FmCdInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmCdStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmCdStock.Designer.cs">
+      <DependentUpon>FmCdStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDataIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDataIn.Designer.cs">
+      <DependentUpon>FmDataIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmDataOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmDataOut.Designer.cs">
+      <DependentUpon>FmDataOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmInit.Designer.cs">
+      <DependentUpon>FmInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmModifyPwd.Designer.cs">
+      <DependentUpon>FmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmProvider.Designer.cs">
+      <DependentUpon>FmProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPublish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPublish.Designer.cs">
+      <DependentUpon>FmPublish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmQueryBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmQueryBook.Designer.cs">
+      <DependentUpon>FmQueryBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmRestore.Designer.cs">
+      <DependentUpon>FmRestore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmReturnDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmReturnDate.Designer.cs">
+      <DependentUpon>FmReturnDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSale.Designer.cs">
+      <DependentUpon>FmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSaleIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSaleIndex.Designer.cs">
+      <DependentUpon>FmSaleIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSaleQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSaleQuery.Designer.cs">
+      <DependentUpon>FmSaleQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSet.Designer.cs">
+      <DependentUpon>FmSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUpdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUpdown.Designer.cs">
+      <DependentUpon>FmUpdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUser.Designer.cs">
+      <DependentUpon>FmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUserPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUserPower.Designer.cs">
+      <DependentUpon>FmUserPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmUserStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmUserStyle.Designer.cs">
+      <DependentUpon>FmUserStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmVip.Designer.cs">
+      <DependentUpon>FmVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmVipStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmVipStyle.Designer.cs">
+      <DependentUpon>FmVipStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmWareBad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmWareBad.Designer.cs">
+      <DependentUpon>FmWareBad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmWarning.Designer.cs">
+      <DependentUpon>FmWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPrintSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPrintSale.Designer.cs">
+      <DependentUpon>FmPrintSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmPrintWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmPrintWare.Designer.cs">
+      <DependentUpon>FmPrintWare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitConnect.cs" />
+    <Compile Include="MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyButton.Designer.cs">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataSet.cs">
+      <DependentUpon>MyDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrintBackReturnBad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintBackReturnBad.Designer.cs">
+      <DependentUpon>PrintBackReturnBad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintBookBack.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookBack.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintBookBad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookBad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintBookReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintBookReturn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintBookSale.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookSale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintBookUpDown.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintBookUpDown.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdBack.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdBack.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdBad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdBad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdReturn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdSale.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdSale.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintCdUpDown.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintCdUpDown.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintUpDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintUpDown.Designer.cs">
+      <DependentUpon>PrintUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintWare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintWare.Designer.cs">
+      <DependentUpon>PrintWare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintWareSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintWareSale.Designer.cs">
+      <DependentUpon>PrintWareSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <EmbeddedResource Include="FmLogin.resx">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmMain.resx">
+      <DependentUpon>FmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAbout.resx">
+      <DependentUpon>FmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBackUp.resx">
+      <DependentUpon>FmBackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookBack.resx">
+      <DependentUpon>FmBookBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookcase.resx">
+      <DependentUpon>FmBookcase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookIn.resx">
+      <DependentUpon>FmBookIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookInfo.resx">
+      <DependentUpon>FmBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookReturn.resx">
+      <DependentUpon>FmBookReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookStock.resx">
+      <DependentUpon>FmBookStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBookStyle.resx">
+      <DependentUpon>FmBookStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmCdInfo.resx">
+      <DependentUpon>FmCdInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmCdStock.resx">
+      <DependentUpon>FmCdStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDataIn.resx">
+      <DependentUpon>FmDataIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmDataOut.resx">
+      <DependentUpon>FmDataOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmInit.resx">
+      <DependentUpon>FmInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmModifyPwd.resx">
+      <DependentUpon>FmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmProvider.resx">
+      <DependentUpon>FmProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPublish.resx">
+      <DependentUpon>FmPublish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmQueryBook.resx">
+      <DependentUpon>FmQueryBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmRestore.resx">
+      <DependentUpon>FmRestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmReturnDate.resx">
+      <DependentUpon>FmReturnDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSale.resx">
+      <DependentUpon>FmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSaleIndex.resx">
+      <DependentUpon>FmSaleIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSaleQuery.resx">
+      <DependentUpon>FmSaleQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSet.resx">
+      <DependentUpon>FmSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUpdown.resx">
+      <DependentUpon>FmUpdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUser.resx">
+      <DependentUpon>FmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUserPower.resx">
+      <DependentUpon>FmUserPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmUserStyle.resx">
+      <DependentUpon>FmUserStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmVip.resx">
+      <DependentUpon>FmVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmVipStyle.resx">
+      <DependentUpon>FmVipStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmWareBad.resx">
+      <DependentUpon>FmWareBad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmWarning.resx">
+      <DependentUpon>FmWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPrintSale.resx">
+      <DependentUpon>FmPrintSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmPrintWare.resx">
+      <DependentUpon>FmPrintWare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBackReturnBad.resx">
+      <DependentUpon>PrintBackReturnBad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookBack.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookBack.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookBad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookBad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookReturn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookSale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookSale.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintBookUpDown.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintBookUpDown.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdBack.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdBack.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdBad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdBad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdReturn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdSale.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdSale.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCdUpDown.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintCdUpDown.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintUpDown.resx">
+      <DependentUpon>PrintUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintWare.resx">
+      <DependentUpon>PrintWare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintWareSale.resx">
+      <DependentUpon>PrintWareSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MyDataSet.xsc">
+      <DependentUpon>MyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyDataSet.xss">
+      <DependentUpon>MyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0308352.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175313625077801.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175313664077803.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753140406778016.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753142609778022.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175314878778039.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753149625778043.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175315546778061.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175321125778081.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753211467780104.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175324531778090.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175332335977803.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175332364077804.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175332387577803.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175332443777808.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753325750778012.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175333078778040.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753333687778063.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175333478778067.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753335562778071.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175333693778041.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175334162778091.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753343157780100.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753347734778070.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200751753351546778032.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175335815778098.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175340467780106.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175340656778058.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175341031778093.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175342265778061.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175343343778066.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175348968778088.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20075175349406778090.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large_icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\删除.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bookEMS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

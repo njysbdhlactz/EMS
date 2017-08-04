@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyDataSet" targetNamespace="http://tempuri.org/MyDataSet.xsd" xmlns:mstns="http://tempuri.org/MyDataSet.xsd" xmlns="http://tempuri.org/MyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MyDataSet" msprop:Generator_UserDSName="MyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="book_info" msprop:Generator_UserTableName="book_info" msprop:Generator_RowEvArgName="book_infoRowChangeEvent" msprop:Generator_TableVarName="tablebook_info" msprop:Generator_TablePropName="book_info" msprop:Generator_RowDeletingName="book_infoRowDeleting" msprop:Generator_RowChangingName="book_infoRowChanging" msprop:Generator_RowDeletedName="book_infoRowDeleted" msprop:Generator_RowEvHandlerName="book_infoRowChangeEventHandler" msprop:Generator_TableClassName="book_infoDataTable" msprop:Generator_RowChangedName="book_infoRowChanged" msprop:Generator_RowClassName="book_infoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="图书名称" msprop:Generator_ColumnVarNameInTable="column图书名称" msprop:Generator_ColumnPropNameInRow="图书名称" msprop:Generator_ColumnPropNameInTable="图书名称Column" msprop:Generator_UserColumnName="图书名称" type="xs:string" minOccurs="0" />
+              <xs:element name="图书类型" msprop:Generator_ColumnVarNameInTable="column图书类型" msprop:Generator_ColumnPropNameInRow="图书类型" msprop:Generator_ColumnPropNameInTable="图书类型Column" msprop:Generator_UserColumnName="图书类型" type="xs:string" minOccurs="0" />
+              <xs:element name="作者" msprop:Generator_ColumnVarNameInTable="column作者" msprop:Generator_ColumnPropNameInRow="作者" msprop:Generator_ColumnPropNameInTable="作者Column" msprop:Generator_UserColumnName="作者" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="进价" msprop:Generator_ColumnVarNameInTable="column进价" msprop:Generator_ColumnPropNameInRow="进价" msprop:Generator_ColumnPropNameInTable="进价Column" msprop:Generator_UserColumnName="进价" type="xs:string" minOccurs="0" />
+              <xs:element name="售价" msprop:Generator_ColumnVarNameInTable="column售价" msprop:Generator_ColumnPropNameInRow="售价" msprop:Generator_ColumnPropNameInTable="售价Column" msprop:Generator_UserColumnName="售价" type="xs:string" minOccurs="0" />
+              <xs:element name="页码" msprop:Generator_ColumnVarNameInTable="column页码" msprop:Generator_ColumnPropNameInRow="页码" msprop:Generator_ColumnPropNameInTable="页码Column" msprop:Generator_UserColumnName="页码" type="xs:string" minOccurs="0" />
+              <xs:element name="书架" msprop:Generator_ColumnVarNameInTable="column书架" msprop:Generator_ColumnPropNameInRow="书架" msprop:Generator_ColumnPropNameInTable="书架Column" msprop:Generator_UserColumnName="书架" type="xs:string" minOccurs="0" />
+              <xs:element name="库存量" msprop:Generator_ColumnVarNameInTable="column库存量" msprop:Generator_ColumnPropNameInRow="库存量" msprop:Generator_ColumnPropNameInTable="库存量Column" msprop:Generator_UserColumnName="库存量" type="xs:string" minOccurs="0" />
+              <xs:element name="出版时间" msprop:Generator_ColumnVarNameInTable="column出版时间" msprop:Generator_ColumnPropNameInRow="出版时间" msprop:Generator_ColumnPropNameInTable="出版时间Column" msprop:Generator_UserColumnName="出版时间" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘所在书架" msprop:Generator_ColumnVarNameInTable="column光盘所在书架" msprop:Generator_ColumnPropNameInRow="光盘所在书架" msprop:Generator_ColumnPropNameInTable="光盘所在书架Column" msprop:Generator_UserColumnName="光盘所在书架" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cd_info" msprop:Generator_UserTableName="cd_info" msprop:Generator_RowEvArgName="cd_infoRowChangeEvent" msprop:Generator_TableVarName="tablecd_info" msprop:Generator_TablePropName="cd_info" msprop:Generator_RowDeletingName="cd_infoRowDeleting" msprop:Generator_RowChangingName="cd_infoRowChanging" msprop:Generator_RowDeletedName="cd_infoRowDeleted" msprop:Generator_RowEvHandlerName="cd_infoRowChangeEventHandler" msprop:Generator_TableClassName="cd_infoDataTable" msprop:Generator_RowChangedName="cd_infoRowChanged" msprop:Generator_RowClassName="cd_infoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="光盘名称" msprop:Generator_ColumnVarNameInTable="column光盘名称" msprop:Generator_ColumnPropNameInRow="光盘名称" msprop:Generator_ColumnPropNameInTable="光盘名称Column" msprop:Generator_UserColumnName="光盘名称" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘类型" msprop:Generator_ColumnVarNameInTable="column光盘类型" msprop:Generator_ColumnPropNameInRow="光盘类型" msprop:Generator_ColumnPropNameInTable="光盘类型Column" msprop:Generator_UserColumnName="光盘类型" type="xs:string" minOccurs="0" />
+              <xs:element name="作者" msprop:Generator_ColumnVarNameInTable="column作者" msprop:Generator_ColumnPropNameInRow="作者" msprop:Generator_ColumnPropNameInTable="作者Column" msprop:Generator_UserColumnName="作者" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="进价" msprop:Generator_ColumnVarNameInTable="column进价" msprop:Generator_ColumnPropNameInRow="进价" msprop:Generator_ColumnPropNameInTable="进价Column" msprop:Generator_UserColumnName="进价" type="xs:string" minOccurs="0" />
+              <xs:element name="售价" msprop:Generator_ColumnVarNameInTable="column售价" msprop:Generator_ColumnPropNameInRow="售价" msprop:Generator_ColumnPropNameInTable="售价Column" msprop:Generator_UserColumnName="售价" type="xs:string" minOccurs="0" />
+              <xs:element name="书架" msprop:Generator_ColumnVarNameInTable="column书架" msprop:Generator_ColumnPropNameInRow="书架" msprop:Generator_ColumnPropNameInTable="书架Column" msprop:Generator_UserColumnName="书架" type="xs:string" minOccurs="0" />
+              <xs:element name="库存量" msprop:Generator_ColumnVarNameInTable="column库存量" msprop:Generator_ColumnPropNameInRow="库存量" msprop:Generator_ColumnPropNameInTable="库存量Column" msprop:Generator_UserColumnName="库存量" type="xs:string" minOccurs="0" />
+              <xs:element name="出版时间" msprop:Generator_ColumnVarNameInTable="column出版时间" msprop:Generator_ColumnPropNameInRow="出版时间" msprop:Generator_ColumnPropNameInTable="出版时间Column" msprop:Generator_UserColumnName="出版时间" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book_back" msprop:Generator_UserTableName="book_back" msprop:Generator_RowEvArgName="book_backRowChangeEvent" msprop:Generator_TableVarName="tablebook_back" msprop:Generator_TablePropName="book_back" msprop:Generator_RowDeletingName="book_backRowDeleting" msprop:Generator_RowChangingName="book_backRowChanging" msprop:Generator_RowDeletedName="book_backRowDeleted" msprop:Generator_RowEvHandlerName="book_backRowChangeEventHandler" msprop:Generator_TableClassName="book_backDataTable" msprop:Generator_RowChangedName="book_backRowChanged" msprop:Generator_RowClassName="book_backRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="图书名称" msprop:Generator_ColumnVarNameInTable="column图书名称" msprop:Generator_ColumnPropNameInRow="图书名称" msprop:Generator_ColumnPropNameInTable="图书名称Column" msprop:Generator_UserColumnName="图书名称" type="xs:string" minOccurs="0" />
+              <xs:element name="图书类型" msprop:Generator_ColumnVarNameInTable="column图书类型" msprop:Generator_ColumnPropNameInRow="图书类型" msprop:Generator_ColumnPropNameInTable="图书类型Column" msprop:Generator_UserColumnName="图书类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="退还数量" msprop:Generator_ColumnVarNameInTable="column退还数量" msprop:Generator_ColumnPropNameInRow="退还数量" msprop:Generator_ColumnPropNameInTable="退还数量Column" msprop:Generator_UserColumnName="退还数量" type="xs:string" minOccurs="0" />
+              <xs:element name="金额" msprop:Generator_ColumnVarNameInTable="column金额" msprop:Generator_ColumnPropNameInRow="金额" msprop:Generator_ColumnPropNameInTable="金额Column" msprop:Generator_UserColumnName="金额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cd_back" msprop:Generator_UserTableName="cd_back" msprop:Generator_RowEvArgName="cd_backRowChangeEvent" msprop:Generator_TableVarName="tablecd_back" msprop:Generator_TablePropName="cd_back" msprop:Generator_RowDeletingName="cd_backRowDeleting" msprop:Generator_RowChangingName="cd_backRowChanging" msprop:Generator_RowDeletedName="cd_backRowDeleted" msprop:Generator_RowEvHandlerName="cd_backRowChangeEventHandler" msprop:Generator_TableClassName="cd_backDataTable" msprop:Generator_RowChangedName="cd_backRowChanged" msprop:Generator_RowClassName="cd_backRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="光盘名称" msprop:Generator_ColumnVarNameInTable="column光盘名称" msprop:Generator_ColumnPropNameInRow="光盘名称" msprop:Generator_ColumnPropNameInTable="光盘名称Column" msprop:Generator_UserColumnName="光盘名称" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘类型" msprop:Generator_ColumnVarNameInTable="column光盘类型" msprop:Generator_ColumnPropNameInRow="光盘类型" msprop:Generator_ColumnPropNameInTable="光盘类型Column" msprop:Generator_UserColumnName="光盘类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="退还数量" msprop:Generator_ColumnVarNameInTable="column退还数量" msprop:Generator_ColumnPropNameInRow="退还数量" msprop:Generator_ColumnPropNameInTable="退还数量Column" msprop:Generator_UserColumnName="退还数量" type="xs:string" minOccurs="0" />
+              <xs:element name="金额" msprop:Generator_ColumnVarNameInTable="column金额" msprop:Generator_ColumnPropNameInRow="金额" msprop:Generator_ColumnPropNameInTable="金额Column" msprop:Generator_UserColumnName="金额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book_return" msprop:Generator_UserTableName="book_return" msprop:Generator_RowEvArgName="book_returnRowChangeEvent" msprop:Generator_TableVarName="tablebook_return" msprop:Generator_TablePropName="book_return" msprop:Generator_RowDeletingName="book_returnRowDeleting" msprop:Generator_RowChangingName="book_returnRowChanging" msprop:Generator_RowDeletedName="book_returnRowDeleted" msprop:Generator_RowEvHandlerName="book_returnRowChangeEventHandler" msprop:Generator_TableClassName="book_returnDataTable" msprop:Generator_RowChangedName="book_returnRowChanged" msprop:Generator_RowClassName="book_returnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="图书名称" msprop:Generator_ColumnVarNameInTable="column图书名称" msprop:Generator_ColumnPropNameInRow="图书名称" msprop:Generator_ColumnPropNameInTable="图书名称Column" msprop:Generator_UserColumnName="图书名称" type="xs:string" minOccurs="0" />
+              <xs:element name="图书类型" msprop:Generator_ColumnVarNameInTable="column图书类型" msprop:Generator_ColumnPropNameInRow="图书类型" msprop:Generator_ColumnPropNameInTable="图书类型Column" msprop:Generator_UserColumnName="图书类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="退货数量" msprop:Generator_ColumnVarNameInTable="column退货数量" msprop:Generator_ColumnPropNameInRow="退货数量" msprop:Generator_ColumnPropNameInTable="退货数量Column" msprop:Generator_UserColumnName="退货数量" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cd_return" msprop:Generator_UserTableName="cd_return" msprop:Generator_RowEvArgName="cd_returnRowChangeEvent" msprop:Generator_TableVarName="tablecd_return" msprop:Generator_TablePropName="cd_return" msprop:Generator_RowDeletingName="cd_returnRowDeleting" msprop:Generator_RowChangingName="cd_returnRowChanging" msprop:Generator_RowDeletedName="cd_returnRowDeleted" msprop:Generator_RowEvHandlerName="cd_returnRowChangeEventHandler" msprop:Generator_TableClassName="cd_returnDataTable" msprop:Generator_RowChangedName="cd_returnRowChanged" msprop:Generator_RowClassName="cd_returnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="光盘名称" msprop:Generator_ColumnVarNameInTable="column光盘名称" msprop:Generator_ColumnPropNameInRow="光盘名称" msprop:Generator_ColumnPropNameInTable="光盘名称Column" msprop:Generator_UserColumnName="光盘名称" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘类型" msprop:Generator_ColumnVarNameInTable="column光盘类型" msprop:Generator_ColumnPropNameInRow="光盘类型" msprop:Generator_ColumnPropNameInTable="光盘类型Column" msprop:Generator_UserColumnName="光盘类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="退货数量" msprop:Generator_ColumnVarNameInTable="column退货数量" msprop:Generator_ColumnPropNameInRow="退货数量" msprop:Generator_ColumnPropNameInTable="退货数量Column" msprop:Generator_UserColumnName="退货数量" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book_bad" msprop:Generator_UserTableName="book_bad" msprop:Generator_RowEvArgName="book_badRowChangeEvent" msprop:Generator_TableVarName="tablebook_bad" msprop:Generator_TablePropName="book_bad" msprop:Generator_RowDeletingName="book_badRowDeleting" msprop:Generator_RowChangingName="book_badRowChanging" msprop:Generator_RowDeletedName="book_badRowDeleted" msprop:Generator_RowEvHandlerName="book_badRowChangeEventHandler" msprop:Generator_TableClassName="book_badDataTable" msprop:Generator_RowChangedName="book_badRowChanged" msprop:Generator_RowClassName="book_badRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="图书名称" msprop:Generator_ColumnVarNameInTable="column图书名称" msprop:Generator_ColumnPropNameInRow="图书名称" msprop:Generator_ColumnPropNameInTable="图书名称Column" msprop:Generator_UserColumnName="图书名称" type="xs:string" minOccurs="0" />
+              <xs:element name="图书类型" msprop:Generator_ColumnVarNameInTable="column图书类型" msprop:Generator_ColumnPropNameInRow="图书类型" msprop:Generator_ColumnPropNameInTable="图书类型Column" msprop:Generator_UserColumnName="图书类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="损坏数量" msprop:Generator_ColumnVarNameInTable="column损坏数量" msprop:Generator_ColumnPropNameInRow="损坏数量" msprop:Generator_ColumnPropNameInTable="损坏数量Column" msprop:Generator_UserColumnName="损坏数量" type="xs:string" minOccurs="0" />
+              <xs:element name="损失金额" msprop:Generator_ColumnVarNameInTable="column损失金额" msprop:Generator_ColumnPropNameInRow="损失金额" msprop:Generator_ColumnPropNameInTable="损失金额Column" msprop:Generator_UserColumnName="损失金额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cd_bad" msprop:Generator_UserTableName="cd_bad" msprop:Generator_RowEvArgName="cd_badRowChangeEvent" msprop:Generator_TableVarName="tablecd_bad" msprop:Generator_TablePropName="cd_bad" msprop:Generator_RowDeletingName="cd_badRowDeleting" msprop:Generator_RowChangingName="cd_badRowChanging" msprop:Generator_RowDeletedName="cd_badRowDeleted" msprop:Generator_RowEvHandlerName="cd_badRowChangeEventHandler" msprop:Generator_TableClassName="cd_badDataTable" msprop:Generator_RowChangedName="cd_badRowChanged" msprop:Generator_RowClassName="cd_badRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="光盘名称" msprop:Generator_ColumnVarNameInTable="column光盘名称" msprop:Generator_ColumnPropNameInRow="光盘名称" msprop:Generator_ColumnPropNameInTable="光盘名称Column" msprop:Generator_UserColumnName="光盘名称" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘类型" msprop:Generator_ColumnVarNameInTable="column光盘类型" msprop:Generator_ColumnPropNameInRow="光盘类型" msprop:Generator_ColumnPropNameInTable="光盘类型Column" msprop:Generator_UserColumnName="光盘类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="损坏数量" msprop:Generator_ColumnVarNameInTable="column损坏数量" msprop:Generator_ColumnPropNameInRow="损坏数量" msprop:Generator_ColumnPropNameInTable="损坏数量Column" msprop:Generator_UserColumnName="损坏数量" type="xs:string" minOccurs="0" />
+              <xs:element name="损失金额" msprop:Generator_ColumnVarNameInTable="column损失金额" msprop:Generator_ColumnPropNameInRow="损失金额" msprop:Generator_ColumnPropNameInTable="损失金额Column" msprop:Generator_UserColumnName="损失金额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book_sale" msprop:Generator_UserTableName="book_sale" msprop:Generator_RowEvArgName="book_saleRowChangeEvent" msprop:Generator_TableVarName="tablebook_sale" msprop:Generator_TablePropName="book_sale" msprop:Generator_RowDeletingName="book_saleRowDeleting" msprop:Generator_RowChangingName="book_saleRowChanging" msprop:Generator_RowDeletedName="book_saleRowDeleted" msprop:Generator_RowEvHandlerName="book_saleRowChangeEventHandler" msprop:Generator_TableClassName="book_saleDataTable" msprop:Generator_RowChangedName="book_saleRowChanged" msprop:Generator_RowClassName="book_saleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="图书名称" msprop:Generator_ColumnVarNameInTable="column图书名称" msprop:Generator_ColumnPropNameInRow="图书名称" msprop:Generator_ColumnPropNameInTable="图书名称Column" msprop:Generator_UserColumnName="图书名称" type="xs:string" minOccurs="0" />
+              <xs:element name="图书类型" msprop:Generator_ColumnVarNameInTable="column图书类型" msprop:Generator_ColumnPropNameInRow="图书类型" msprop:Generator_ColumnPropNameInTable="图书类型Column" msprop:Generator_UserColumnName="图书类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="销售数量" msprop:Generator_ColumnVarNameInTable="column销售数量" msprop:Generator_ColumnPropNameInRow="销售数量" msprop:Generator_ColumnPropNameInTable="销售数量Column" msprop:Generator_UserColumnName="销售数量" type="xs:string" minOccurs="0" />
+              <xs:element name="销售额" msprop:Generator_ColumnVarNameInTable="column销售额" msprop:Generator_ColumnPropNameInRow="销售额" msprop:Generator_ColumnPropNameInTable="销售额Column" msprop:Generator_UserColumnName="销售额" type="xs:string" minOccurs="0" />
+              <xs:element name="利润额" msprop:Generator_ColumnVarNameInTable="column利润额" msprop:Generator_ColumnPropNameInRow="利润额" msprop:Generator_ColumnPropNameInTable="利润额Column" msprop:Generator_UserColumnName="利润额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cd_sale" msprop:Generator_UserTableName="cd_sale" msprop:Generator_RowEvArgName="cd_saleRowChangeEvent" msprop:Generator_TableVarName="tablecd_sale" msprop:Generator_TablePropName="cd_sale" msprop:Generator_RowDeletingName="cd_saleRowDeleting" msprop:Generator_RowChangingName="cd_saleRowChanging" msprop:Generator_RowDeletedName="cd_saleRowDeleted" msprop:Generator_RowEvHandlerName="cd_saleRowChangeEventHandler" msprop:Generator_TableClassName="cd_saleDataTable" msprop:Generator_RowChangedName="cd_saleRowChanged" msprop:Generator_RowClassName="cd_saleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="光盘名称" msprop:Generator_ColumnVarNameInTable="column光盘名称" msprop:Generator_ColumnPropNameInRow="光盘名称" msprop:Generator_ColumnPropNameInTable="光盘名称Column" msprop:Generator_UserColumnName="光盘名称" type="xs:string" minOccurs="0" />
+              <xs:element name="光盘类型" msprop:Generator_ColumnVarNameInTable="column光盘类型" msprop:Generator_ColumnPropNameInRow="光盘类型" msprop:Generator_ColumnPropNameInTable="光盘类型Column" msprop:Generator_UserColumnName="光盘类型" type="xs:string" minOccurs="0" />
+              <xs:element name="出版社" msprop:Generator_ColumnVarNameInTable="column出版社" msprop:Generator_ColumnPropNameInRow="出版社" msprop:Generator_ColumnPropNameInTable="出版社Column" msprop:Generator_UserColumnName="出版社" type="xs:string" minOccurs="0" />
+              <xs:element name="ISBN" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_UserColumnName="ISBN" type="xs:string" minOccurs="0" />
+              <xs:element name="销售数量" msprop:Generator_ColumnVarNameInTable="column销售数量" msprop:Generator_ColumnPropNameInRow="销售数量" msprop:Generator_ColumnPropNameInTable="销售数量Column" msprop:Generator_UserColumnName="销售数量" type="xs:string" minOccurs="0" />
+              <xs:element name="销售额" msprop:Generator_ColumnVarNameInTable="column销售额" msprop:Generator_ColumnPropNameInRow="销售额" msprop:Generator_ColumnPropNameInTable="销售额Column" msprop:Generator_UserColumnName="销售额" type="xs:string" minOccurs="0" />
+              <xs:element name="利润额" msprop:Generator_ColumnVarNameInTable="column利润额" msprop:Generator_ColumnPropNameInRow="利润额" msprop:Generator_ColumnPropNameInTable="利润额Column" msprop:Generator_UserColumnName="利润额" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

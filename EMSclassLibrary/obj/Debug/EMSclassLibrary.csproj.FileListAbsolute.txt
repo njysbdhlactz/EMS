@@ -1,0 +1,4 @@
+D:\WorkSpaces\C#program\booksEMS\EMSclassLibrary\bin\Debug\EMSclassLibrary.dll
+D:\WorkSpaces\C#program\booksEMS\EMSclassLibrary\bin\Debug\EMSclassLibrary.pdb
+D:\WorkSpaces\C#program\booksEMS\EMSclassLibrary\obj\Debug\EMSclassLibrary.dll
+D:\WorkSpaces\C#program\booksEMS\EMSclassLibrary\obj\Debug\EMSclassLibrary.pdb
